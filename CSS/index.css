@@ -1,0 +1,18 @@
+/* ----IMPORTING EXTERNAL FONTS------ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ----IMPORTING STYLES---- */
+@import url(header.css);
+
+/* RESETTING styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ------- THE ROOT STYLING */
+:root {
+    --primary-color: red;
+}
