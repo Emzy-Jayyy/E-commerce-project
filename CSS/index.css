@@ -43,15 +43,14 @@ body {
     display: none;
 }
 
+.hide-mobile1 {
+    display: none;
+}
+
 @media screen and (min-width:750px) {
     .hide-mobile {
         display: block;
     }
-
-    .navigation-whitebar-categories hide-mobile {
-        display: none;
-    }
-
 }
 
 
@@ -60,4 +59,7 @@ body {
         display: block;
     }
 
+    .hide-mobile1 {
+        display: block;
+    }
 }

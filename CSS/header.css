@@ -33,7 +33,9 @@
     justify-content: space-between;
     height: 100%;
     gap: 10px;
-    padding-top: 10px;
+    padding-block: 10px;
+    /* width: auto; */
+    margin-inline: auto;
 }
 
 .container {
@@ -71,6 +73,7 @@
     font-size: 12px;
 }
 
+/* ----- FOR TABLET------ */
 
 @media screen and (min-width:750px) {
     .greenbar {
@@ -93,6 +96,21 @@
 
     .greenbar-left {
         justify-content: space-between;
+    }
+
+    .navigation-section-greenbar1>span:nth-child(2) {
+        display: block;
+    }
+
+    .navigation-section-greenbar .slash {
+        display: block;
+        height: 15px;
+        width: 2px;
+        background-color: white;
+    }
+
+    .navigation-section-greenbar2>span:nth-child(1) {
+        display: block;
     }
 
     .slash {
@@ -133,7 +151,36 @@
 
     .navigation-whitebar-categories hide-mobile {
         display: none;
-        !important
+    }
+
+    /* -------FOR LAPTOPS------- */
+
+    @media screen and (min-width:1024px) {
+        /* button.categories-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        } */
+
+        .navigation-whitebar-categories {
+            gap: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: auto;
+            display: inline;
+        }
+
+        .hambugerMenu-btn {
+            display: none;
+        }
+
     }
 
 }
