@@ -1,22 +1,139 @@
-body {
-    font-size: 15pt;
-
-}
-
 .greenbar {
     background-color: var(--primary-color);
-    color: white;
-    width: 100%;
-    height: 70px;
+    color: var(--white-color);
     font-size: 13px;
+    height: 70px;
+    width: 100%;
 }
 
 .greenbar .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* width: 100%;    */
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.greenbar-left>span {
+.location-language {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-section-whitebar {
+    height: 80px;
+    position: relative;
+}
+
+.navigation-section-whitebar,
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.container {
+    width: min(90%, 1400px);
+}
+
+.navigation-section-whitebar .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation-section-account-cart {
     display: none;
+}
+
+.navigation-section-searchbar-holder {
+    width: 250px;
+    height: 40px;
+    border: grey 1px solid;
+    border-radius: 100px;
+    border-color: grey;
+    padding: 5px;
+}
+
+.navigation-section-searchbar-holder input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 3px;
+}
+
+.navigation-section-searchbar-holder i {
+    font-size: 12px;
+}
+
+
+@media screen and (min-width:750px) {
+    .greenbar {
+        height: 40px;
+    }
+
+    .greenbar .container {
+        flex-direction: row;
+        /* background-color: red; */
+        justify-content: space-between;
+    }
+
+    .greenbar-left,
+    .greenbar-right {
+        display: flex;
+        /* background-color: blue; */
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .greenbar-left {
+        justify-content: space-between;
+    }
+
+    .slash {
+        height: 15px;
+        width: 2px;
+        background-color: var(--white-color);
+    }
+
+    .navigation-section-account-cart {
+        display: flex;
+
+    }
+
+    .navigation-section-account-cart span {
+        display: flex;
+        gap: 2px;
+    }
+
+    .navigation-section-account-cart i {
+        font-size: 12px;
+    }
+
+    .navigation-section-account-cart span:nth-child(2) {
+        position: relative;
+    }
+
+    .navigation-section-account-cart span:nth-child(2) .red {
+        position: absolute;
+        background-color: #dc2626;
+        color: #fff;
+        padding: 0 3px;
+        border-radius: 50%;
+        font-weight: 600;
+        top: -7px;
+        font-size: 12px;
+        right: -10px;
+    }
+
+    .navigation-whitebar-categories hide-mobile {
+        display: none;
+        !important
+    }
+
 }

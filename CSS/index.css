@@ -1,18 +1,63 @@
-/* ----IMPORTING EXTERNAL FONTS------ */
+/* Importing external fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* ----IMPORTING STYLES---- */
-@import url(header.css);
+/* --------- IMPORTING STYLES --------- */
+@import url('header.css');
 
-/* RESETTING styles */
+/* Resetting styles */
 * {
-    /* padding: 0; */
-    /* margin: 0; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-/* ------- THE ROOT STYLING */
+body {
+    background-color: var(--white-color);
+}
+
+/* Variables */
 :root {
-    --primary-color: red;
+    --primary-color: #003d29;
+    --white-color: #fff;
+    --text-color: #231f1e;
+    --misty-rose: #f9dcdc;
+    --white-smoke: #f5f6f6;
+    --linen: #f2e4d9;
+    --white-color: #fcfcfc;
+    --light-cyan: #d2f7ec;
+    --margin-top: 80px;
+}
+
+/* --- Utility Classes --- */
+.container {
+    width: min(90%, 1400px);
+    margin-inline: auto;
+    /* background-color: red; */
+}
+
+.hide-mobile {
+    display: none;
+}
+
+@media screen and (min-width:750px) {
+    .hide-mobile {
+        display: block;
+    }
+
+    .navigation-whitebar-categories hide-mobile {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .hide-mobile {
+        display: block;
+    }
+
 }
